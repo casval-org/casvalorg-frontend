@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "CASVAL Kariyer Günleri Zirvesi",
+        "date": "2 Mart 2024",
+        "description": "CASVAL Kariyer Günleri Zirvesi, 2 Mart Pazar günü Umut Kılınç, Nuri Murat Avcı, Ömer Faruk Ayaz ve Elif Aslı Yıldız Tunaoğlu sunumlarıyla ücretsiz ve online olarak CASVAL farkıyla gerçekleşecek.",
+        "eventPage": "https://biletino.com/tr/e-t4g/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/37744/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": "KGZ2024",
+        "promote": true,
+        "isOnline": true
+    },
+    {
+        "id": 0,
+        "title": "TEDxBeşkazaMeydanı Youth",
+        "date": "28 Nisan 2024",
+        "description": "Create & Share Value Temasıyla Fethiye'nin ikinci TEDx'i olan TEDxBeşkazaMeydanı Youth, 28 Nisan 2023 tarihinde R.Berk Karataş organizatörlüğünde gerçekleşecek.",
+        "eventPage": "https://tedxbeskaza.com",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/37484/960x540.jpg",
+        "organizer": "R.Berk Karataş",
+        "discount": "CASVAL50",
+        "promote": true,
+        "isOnline": false
+    },
+    {
+        "id": 4,
+        "title": "TEDxKötekli Youth",
+        "date": "Mayıs 2024",
+        "description": "Muğla'nın en büyük TEDx etkinliği olan TEDxKötekli, 2024 yılında Mayıs'ta gerçekleşecek.",
+        "eventPage": "https://tedxkotekli.com",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/38445/960x540.jpg",
+        "organizer": "R.Berk Karataş",
+        "discount": null,
+        "promote": false,
+        "isOnline": false
+    },
+    {
+        "id": 2,
+        "title": "TEDxAtapark",
+        "date": "2024",
+        "description": "Yenal Yıldırım organizatörlüğünde CASVAL ekibiyle birlikte gerçekleşecek olan TEDxAtapark, 2024 yılında gerçekleşecek.",
+        "eventPage": "https://tedxatapark.com",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/33046/960x540.jpg",
+        "organizer": "Yenal Yıldırım",
+        "discount": null,
+        "promote": false,
+        "isOnline": false
+    }
+]
