@@ -1,24 +1,24 @@
 import React from 'react'
 
 export default function EventCard(props) {
+    const isPastEvent = new Date(props.data.date) < new Date();
+    const date = new Date(props.data.date);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = date.toLocaleDateString('tr-TR', options); // "2 Mart 2024" formatında tarih
     return (
-        <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <article class={`p-6 ${isPastEvent ? 'bg-gray-200' : 'bg-white'} rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}>
             <div class="flex justify-between items-center mb-5 text-gray-500">
-                {/* <div>
-                    <span class="bg-primary-100 text-primary-800 text-xs m-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                <div>
+                    <span class="bg-green-100 text-green-800 text-xs m-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800">
                         <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
-                        Konferans
-                    </span>
-                    <span class="bg-primary-100 text-primary-800 text-xs m-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
-                        TEDx
+                        {formattedDate}
                     </span>
 
-                </div> */}
+                </div>
 
-                <span class="text-sm"> {} </span>
+                <span class="text-sm"> { } </span>
             </div>
-            <img class="rounded-lg" src={props.data.banner} alt="" />
+            <img class={`rounded-lg ${isPastEvent ? 'filter grayscale' : ''}`} src={props.data.banner} alt="" />
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-4"><a target='_blank' href={props.data.eventPage}>{props.data.title}</a></h2>
             <p class="mb-5 font-light text-gray-500 dark:text-gray-400">{props.data.description}</p>
             <div id="organizator" class="flex justify-between items-center">

@@ -1,10 +1,13 @@
 import React from 'react'
 
 export default function TimelineItem(props) {
+    const date = new Date(props.data.date);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = date.toLocaleDateString('tr-TR', options); // "2 Mart 2024" formatında tarih // "gün/ay/yıl" formatında tarih
     return (
         <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{props.data.date}</time>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{formattedDate}</time>
             <img class="max-w-xs py-2" src={props.data.banner} alt="" />
 
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{props.data.title}</h3>

@@ -2,49 +2,174 @@
     {
         "id": 1,
         "title": "CASVAL Kariyer Günleri Zirvesi",
-        "date": "2 Mart 2024",
+        "date": "2024-03-02T12:00:00+03:00",
         "description": "CASVAL Kariyer Günleri Zirvesi, 2 Mart Pazar günü Umut Kılınç, Nuri Murat Avcı, Ömer Faruk Ayaz ve Elif Aslı Yıldız Tunaoğlu sunumlarıyla ücretsiz ve online olarak CASVAL farkıyla gerçekleşecek.",
         "eventPage": "https://biletino.com/tr/e-t4g/",
         "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/37744/960x540.jpg",
         "organizer": "CASVAL",
         "discount": "KGZ2024",
         "promote": true,
-        "isOnline": true
+        "isOnline": true,
+        "openToPartnership": true,
+        "team":[
+            {
+                "name":"R.Berk Karataş",
+                "title":"Organizatör"
+            },
+            {
+                "name":"Zeynep Karakoç",
+                "title":"Kurator"
+            },
+            {
+                "name":"Begüm Kırık",
+                "title":"Kurator"
+            },
+            {
+                "name":"Mert Şişmanoğlu",
+                "title":"IT-Teknik"
+            },
+            {
+                "name":"Nursena",
+                "title":"Kurator"
+            },
+            {
+                "name":"Asiye Baran",
+                "title":"Medya"
+            },
+            {
+                "name":"Şükrü Kocakahya",
+                "title":"Medya"
+            }
+        ]
     },
     {
         "id": 0,
         "title": "TEDxBeşkazaMeydanı Youth",
-        "date": "28 Nisan 2024",
+        "date": "2024-04-28T12:00:00+03:00",
         "description": "Create & Share Value Temasıyla Fethiye'nin ikinci TEDx'i olan TEDxBeşkazaMeydanı Youth, 28 Nisan 2023 tarihinde R.Berk Karataş organizatörlüğünde gerçekleşecek.",
         "eventPage": "https://tedxbeskaza.com",
         "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/37484/960x540.jpg",
         "organizer": "R.Berk Karataş",
         "discount": "CASVAL50",
         "promote": true,
-        "isOnline": false
+        "isOnline": false,
+        "openToPartnership": true
     },
     {
         "id": 4,
         "title": "TEDxKötekli Youth",
-        "date": "Mayıs 2024",
+        "date": "2024-05-12T12:00:00+03:00",
         "description": "Muğla'nın en büyük TEDx etkinliği olan TEDxKötekli, 2024 yılında Mayıs'ta gerçekleşecek.",
         "eventPage": "https://tedxkotekli.com",
         "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/38445/960x540.jpg",
         "organizer": "R.Berk Karataş",
         "discount": null,
         "promote": false,
-        "isOnline": false
+        "isOnline": false,
+        "openToPartnership": true
     },
     {
         "id": 2,
         "title": "TEDxAtapark",
-        "date": "2024",
+        "date": "2023-11-19T12:00:00+03:00",
         "description": "Yenal Yıldırım organizatörlüğünde CASVAL ekibiyle birlikte gerçekleşecek olan TEDxAtapark, 2024 yılında gerçekleşecek.",
         "eventPage": "https://tedxatapark.com",
         "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/33046/960x540.jpg",
         "organizer": "Yenal Yıldırım",
         "discount": null,
         "promote": false,
-        "isOnline": false
+        "isOnline": false,
+        "openToPartnership": true
+    },
+    {
+        "id": 5,
+        "title": "CASVAL Kariyer Günleri: Çilem Akar",
+        "date": "2023-10-17T19:00:00+03:00",
+        "description": "CASVAL tarafından düzenlenen ve Çilem Akar'ın sahne alacağı kariyer günleri etkinliği.",
+        "eventPage": "https://biletino.com/tr/e-qfp/casval-kariyer-gunleri-cilem-akar/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/34261/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": true,
+        "openToPartnership": false
+    },
+    {
+        "id": 6,
+        "title": "CASVAL Kariyer Günleri: Özgür Oğuz",
+        "date": "2023-10-24T19:00:00+03:00",
+        "description": "SSport Marketing Manager olan Özgür Oğuz'un konuşmacı olarak katılacağı CASVAL Kariyer Günleri etkinliği.",
+        "eventPage": "https://biletino.com/tr/e-pwd/casval-kariyer-gunleri-ozgur-oguz-yeni-nesil-yayin-platformlari-ve-izleyici-davranisi/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/33565/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": true,
+        "openToPartnership": false
+    },
+    {
+        "id": 7,
+        "title": "CASVAL Kariyer Günleri: Güntülü Yalçın",
+        "date": "2023-08-22T18:30:00+03:00",
+        "description": "Güntülü Yalçın'ın anlatımıyla 'Yolda Olmak' konulu bir etkinlik.",
+        "eventPage": "https://biletino.com/tr/e-piw/guntulu-yalcin-yolda-olmak/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/33080/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": true,
+        "openToPartnership": false
+    },
+    {
+        "id": 8,
+        "title": "CASVAL Kariyer Günleri: Aziz Ahmedov",
+        "date": "2023-08-18T00:00:00+03:00",
+        "description": "Kocaeli Üniversitesi İngilizce Öğretmenliği mezunu ve İstanbul Üniversitesi İşletme bölümünde eğitimine devam eden Aziz Ahmedov'un konuşmacı olarak katılacağı etkinlik.",
+        "eventPage": "https://biletino.com/en/e-pbm/casval-kariyer-gunleri-aziz-ahmedov/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/32818/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": true,
+        "openToPartnership": false
+    },
+    {
+        "id": 9,
+        "title": "CASVAL Yurt Dışı Eğitim Seminerleri: Ceylin Kulacoğlu - İtalya",
+        "date": "2023-08-05T00:00:00+03:00",
+        "description": "Ceylin Kulacoğlu'nun İtalya'da eğitim deneyimlerini paylaşacağı bir seminer.",
+        "eventPage": "https://biletino.com/tr/e-p4e/casval-yurt-disi-egitim-seminerleri-ceylin-kulacoglu-italya/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/32558/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": true,
+        "openToPartnership": false
+    },
+    {
+        "id": 10,
+        "title": "Fr. Deniz Dündar: Zaman ve Yaşam Yönetimi",
+        "date": "2023-07-28T00:00:00+03:00",
+        "description": "Fr. Deniz Dündar'ın zaman ve yaşam yönetimi üzerine gerçekleştireceği etkinlik.",
+        "eventPage": "https://biletino.com/tr/e-oxr/fr-deniz-dundar-zaman-ve-yasam-yonetimi/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/32319/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": false,
+        "openToPartnership": false
+    },
+    {
+        "id": 11,
+        "title": "CASVAL Girişimcilik Eğitimi: Zek Dündar",
+        "date": "2023-08-22T00:00:00+03:00",
+        "description": "Zek Dündar'ın girişimcilik üzerine tecrübelerini paylaşacağı bir eğitim etkinliği.",
+        "eventPage": "https://biletino.com/tr/e-oth/casval-girisimcilik-egitimi-zek-dundar/",
+        "banner": "https://resources-biletino.s3-external-3.amazonaws.com/content/event/32165/960x540.jpg",
+        "organizer": "CASVAL",
+        "discount": null,
+        "promote": false,
+        "isOnline": false,
+        "openToPartnership": false
     }
 ]
