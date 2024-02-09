@@ -8,7 +8,7 @@ export default function Stats() {
         },
         {
             title: "Katılımcı Sayısı",
-            count: "23.120"
+            count: "23.000+"
         },
         {
             title: "Üye Sayısı",

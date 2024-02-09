@@ -1,30 +1,33 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Slider from '../components/Slider'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Jumbotron from '../components/Jumbotron'
-import Blog from '../components/BlogSection'
-import Dial from '../components/Dial'
 import Timeline from '../components/Timeline'
 import Stats from '../components/Stats'
-import TrustedComp from '../components/TrustedComp'
+
 import BecomePartner from '../components/BecomePartner'
+import { Helmet } from 'react-helmet'
 
 export default function Home() {
     return (
         <div>
+            <Helmet>
+                <title>CASVAL | Create & Share Value</title>
+                <meta name="description" content="Bulunduğu her ortamda durmaksızın değer üreten ve bu değeri paylaşan aktif beyinler topluluğu." />
+                <meta name="keywords" content="CASVAL, Create and Share Value, Etkinlikler, Partnerlik" />
+            </Helmet>
             <Navbar />
-            <Jumbotron/>
+            <Jumbotron />
             {/* <Slider /> */}
-            <Timeline/>
-            <Stats/>
+            <Timeline />
+            <Stats />
             {/* <TrustedComp/> */}
 
             {/* <Blog/> */}
-            <BecomePartner/>
+            <BecomePartner />
 
-            <Footer/>
+            <Footer />
             {/* <Dial/> */}
             <Banner />
         </div>

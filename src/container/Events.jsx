@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import EventCard from '../components/EventCard'
 import events from '../data/events.json'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet'
 
 export default function Events() {
     const [filter, setFilter] = useState(0)
@@ -24,12 +25,17 @@ export default function Events() {
     }
     return (
         <div>
+            <Helmet>
+                <title>CASVAL | Etkinlikler</title>
+                <meta name="description" content="CASVAL bünyesinde içerik üretmekten keyif alan üyelerimizin hazırladığı etkinlik arşivi." />
+                <meta name="keywords" content="CASVAL, Etkinlikler, TEDx, Zirve, Girişimcilik, Kariyer Günleri" />
+            </Helmet>
             <Navbar></Navbar>
             <section class="bg-white dark:bg-gray-900 pt-20">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-m text-center lg:mb-16 mb-8">
                         <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 ">Etkinlik Takvimi</h2>
-                        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400"> dark:text-whiteCASVAL bünyesinde içerik üretmekten keyif alan üyelerimizin hazırladığı etkinlik arşivi.</p>
+                        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400"> CASVAL bünyesinde içerik üretmekten keyif alan üyelerimizin hazırladığı etkinlik arşivi.</p>
                     </div>
                     <div className="flex justify-center rounded-md shadow-sm my-4">
                         <a 
@@ -62,7 +68,7 @@ export default function Events() {
                             class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
                         ></div>
 
-                        <span class="relative z-10 bg-white dark:bg-gray-900 mb-4 text-3xl lg:text-2xl tracking-tight font-bold text-gray-900  px-6">Ekinlik Listesi</span>
+                        <span class="relative z-10 bg-white dark:bg-gray-900 mb-4 text-3xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white  px-6">Ekinlik Listesi</span>
                     </span>
                     <div class="grid gap-8 max-w-5xl mx-auto dark:text-white lg:grid-cols-2">
                         {getEvents().map((event, index) => (

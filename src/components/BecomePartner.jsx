@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import EventCard from './EventCard'
+import events from '../data/events.json'
 
 export default function BecomePartner() {
+    function getEvents() {
+        return events.filter(event => event.openToPartnership & (new Date(event.date) > new Date()))
+    }
     return (
 
 
@@ -18,6 +23,19 @@ export default function BecomePartner() {
                     </Link>
                 </div>
             </div>
+            <span class="relative flex justify-center ">
+                        <div
+                            class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+                        ></div>
+
+                        <span class="relative z-10 bg-white dark:bg-gray-900 mb-4 text-3xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white  px-6">Partnerliğe Açık Etkinlikler</span>
+                    </span>
+                    <div class="grid gap-8 max-w-5xl mx-auto dark:text-white lg:grid-cols-2">
+                        {getEvents().map((event, index) => (
+                            <EventCard key={index} data={event} />
+                        ))}
+
+                    </div>
         </section>
         
 
