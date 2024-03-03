@@ -3,22 +3,40 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import EventCard from '../components/EventCard'
 import events from '../data/events.json'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
+import moment from 'moment'
 
 export default function Events() {
     const [filter, setFilter] = useState(0)
+    const [sortedEvents, setSortedEvents] = useState([]);
+    useEffect(() => {
+        // Etkinlikleri tarihlerine göre sırala
+        const sorted = events.sort((a, b) => {
+          const dateA = moment(a.date);
+          const dateB = moment(b.date);
+          return dateA - dateB;
+        });
+    
+        // Gelecek etkinlikleri en yakından başlayarak sırala
+        const futureEvents = sorted.filter((event) => moment(event.date) >= moment());
+    
+        // Geçmiş etkinlikleri en yakından başlayarak sırala
+        const pastEvents = sorted.filter((event) => moment(event.date) < moment());
+    
+        setSortedEvents([...futureEvents, ...pastEvents.reverse()]);
+      }, []); 
 
     function getEvents() {
         switch (filter) {
             case 0:
-                return events
+                return sortedEvents
             case 1:
-                return events.filter(event => event.isOnline)
+                return sortedEvents.filter(event => event.isOnline)
             case 2:
-                return events.filter(event => !event.isOnline)
+                return sortedEvents.filter(event => !event.isOnline)
             case 3:
-                return events.filter(event => new Date(event.date) < new Date())
+                return sortedEvents.filter(event => new Date(event.date) < new Date())
             default:
                 return events
         }
