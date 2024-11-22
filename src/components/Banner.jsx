@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 export default function Banner() {
-
     const [email, setEmail] = useState('');
 
     if (localStorage.getItem("subscribed") === "true") {
@@ -18,7 +17,7 @@ export default function Banner() {
         localStorage.setItem("subscribed", true);
         closeBanner(event);
 
-        fetch('https://ecommerce-api-ten-sooty.vercel.app/api/v1/subscribe', {
+        fetch(process.env.REACT_APP_API_URL + '/subscribe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
